@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="todo-app.css">
+  <title>Our Todo Management App</title>
+</head>
+
+<body>
+  <main class="TodoPage">
+    <h1 class="TodoPageTitle">
+      My Todo-list
+    </h1>
+    <section class="AddTodo">
+      <input type="text" class="AddTodo__Text" placeholder="What's next?">
+      <input type="date" class="AddTodo__Date">
+      <input type="button" class="AddTodo__AddButton" value="Add">
+    </section>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle__Deadline">Due Today</p>
+        <p class="TodoSectionTitle__Count">0/2</p>
+      </div>
+      <ul class="TodoList">
+        <li class="TodoItem">
+          <input type="checkbox" name="done">
+          <p class="TodoItem__Title">Complete SaaS Project</p>
+          <p class="TodoItem__Status">Overdue</p>
+          <a href="#" class="TodoItem__Delete">
+            <img src="delete.png" alt="delete button">
+          </a>
+        </li>
+        <li class="TodoItem">
+          <input type="checkbox" name="done">
+          <p class="TodoItem__Title">Call attendant</p>
+          <a href="#" class="TodoItem__Delete">
+            <img src="delete.png" alt="delete button">
+          </a>
+        </li>
+        <li class="TodoItem"></li>
+      </ul>
+    </section>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle__Deadline">Due Tomorrow</p>
+        <p class="TodoSectionTitle__Count">0/2</p>
+      </div>
+      <ul class="TodoList">
+        <li class="TodoItem">
+          <input type="checkbox" name="done">
+          <p class="TodoItem__Title">Do Check-in</p>
+          <a href="#" class="TodoItem__Delete">
+            <img src="delete.png" alt="delete button">
+          </a>
+        </li>
+        <li class="TodoItem">
+          <input type="checkbox" name="done">
+          <p class="TodoItem__Title">Complete Next Level</p>
+          <a href="#" class="TodoItem__Delete">
+            <img src="delete.png" alt="delete button">
+          </a>
+        </li>
+        <li class="TodoItem"></li>
+      </ul>
+    </section>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle__Deadline">Remaining</p>
+        <p class="TodoSectionTitle__Count">0/2</p>
+      </div>
+      <ul class="TodoList">
+        <li class="TodoItem">
+          <input type="checkbox" name="done">
+          <p class="TodoItem__Title">Start Next Course</p>
+          <p class="TodoItem__Date">Jan 20</p>
+          <a href="#" class="TodoItem__Delete">
+            <img src="delete.png" alt="delete button">
+          </a>
+        </li>
+        <li class="TodoItem">
+          <input type="checkbox" name="done">
+          <p class="TodoItem__Title">Start Internship</p>
+          <p class="TodoItem__Date">Jan 21</p>
+          <a href="#" class="TodoItem__Delete">
+            <img src="delete.png" alt="delete button">
+          </a>
+        </li>
+        <li class="TodoItem"></li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif, OpenSans;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.TodoPage {
+    max-width: 460px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.TodoPageTitle {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 600;
+    color: #453c52;
+    margin-bottom: 12px;
+}
+
+.AddTodo {
+    display: flex;
+    height: 32px;
+    align-items: stretch;
+    margin-bottom: 32px;
+}
+
+.AddTodo__Text {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #bfb8cc;
+    margin-right: 10px;
+    color: #453c52;
+}
+
+.AddTodo__Date {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #bfb8cc;
+    margin-right: 10px;
+    color: #453c52;
+}
+.AddTodo__AddButton {
+    font-size: 14px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    background-color: #48bb78;
+    color: #ffffff;
+}
+
+.TodoSection {
+    margin-bottom: 20px;
+}
+.TodoSectionTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.TodoSectionTitle__Deadline {
+    margin-right: 8px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.TodoItem {
+    font-size: 14px;
+    margin-left: 8px;
+    margin-bottom: 6px;
+    color: #453c52;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.TodoItem__Title {
+    margin: 0 5px;
+    font-size: 14px;
+    margin: auto 5px;
+}
+.TodoItem__Status {
+    color: #c53030;
+    font-size: 12px;
+    margin: auto 0;
+}
+.TodoItem__Date {
+    color: #726a7e;
+    font-size: 12px;
+    margin: auto 0;
+}
+.TodoItem__Delete img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    visibility: hidden;
+}
+
+.TodoItem:hover .TodoItem__Delete img {
+    visibility: visible;
+}
+.TodoItem:hover {
+    background: #f1edf7;
+}
