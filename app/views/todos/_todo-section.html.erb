@@ -1,0 +1,22 @@
+<section class="TodoSection">
+  <div class="TodoSectionTitle">
+    <p class="TodoSectionTitle__Deadline"> <%= section_title %> </p>
+    <p class="TodoSectionTitle__Count"> <%= todos.completed.count %>  / <%= todos.count %> </p>
+  </div>
+  <ul class="TodoList">
+    <% todos.each do |todo| %>
+      <li class="TodoItem">
+        <input type="checkbox" name="done">
+        <p class="TodoItem__Title">
+          <%= todo.todo_text %>
+        </p>
+        <% if show_due_date %>
+          <p class="TodoItem__Date"> <%= todo.due_date.to_s(:short) %> </p>
+        <% end %>
+        <a href="#" class="TodoItem__Delete">
+          <img src="/delete.png" alt="delete button">
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</section>

@@ -1,0 +1,28 @@
+<main class="TodoPage">
+    <h1 class="TodoPageTitle">
+      My Todo-list
+    </h1>
+    <section class="AddTodo">
+      <input type="text" class="AddTodo__Text" placeholder="What's next?">
+      <input type="date" class="AddTodo__Date">
+      <input type="button" class="AddTodo__AddButton" value="Add">
+    </section>
+
+    <%= render partial: "todo-section",locals: {
+        section_title: "Overdue",
+        todos: Todo.overdue,
+        show_due_date: true,
+      } %>
+
+    <%= render partial: "todo-section",locals: {
+        section_title: "Due Today",
+        todos: Todo.due_today,
+        show_due_date: false,
+      } %>
+
+    <%= render partial: "todo-section",locals: {
+        section_title: "Due Later",
+        todos: Todo.due_later,
+        show_due_date: true,
+      } %>
+  </main>
