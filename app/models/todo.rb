@@ -20,6 +20,6 @@ class Todo < ActiveRecord::Base
   end
 
   def self.incomplete
-    all.where(completed: nil)
+    all.where(completed: false)
   end
 end
