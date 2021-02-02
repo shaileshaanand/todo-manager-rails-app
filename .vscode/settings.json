@@ -1,4 +1,15 @@
 {
     "editor.tabSize": 2,
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 2,
+    "ruby.format": "rufo",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "ruby.useLanguageServer": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "erb":"html",
+    },
 }
