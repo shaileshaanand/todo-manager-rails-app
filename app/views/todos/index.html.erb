@@ -3,9 +3,9 @@
       My Todo-list
     </h1>
     <form method="POST" action="/todos" class="AddTodo">
-      <input type="text" name="todo_text" class="AddTodo__Text" placeholder="What's next?">
-      <input type="date" name="due_date" class="AddTodo__Date">
-      <input type="submit" class="AddTodo__AddButton" value="Add">
+      <%= text_field_tag("todo_text", nil, class: "AddTodo__Text", placeholder: "What's next?") %>
+      <%= text_field_tag("due_date", nil, type: "date", class: "AddTodo__Date") %>
+      <%= text_field_tag("Add", "Add", type: "submit", class: "AddTodo__AddButton") %>
     </form>
 
     <%= render partial: "todo-section",locals: {
