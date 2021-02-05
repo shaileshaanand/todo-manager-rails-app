@@ -1,5 +1,8 @@
 body {
   font-family: sans-serif, OpenSans;
+  max-width: 460px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 input[type="checkbox"] {
