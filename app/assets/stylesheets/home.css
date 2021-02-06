@@ -7,3 +7,10 @@
   font-size: 16px;
   margin-bottom: 25px;
 }
+
+.UserHeader {
+  padding: 10px;
+  background-color: #b7b7b7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
