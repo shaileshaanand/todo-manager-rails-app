@@ -10,7 +10,8 @@ class SessionsController < ApplicationController
       session[:current_user_id] = user.id
       redirect_to root_path
     else
-      render plain: "Wrong Password"
+      flash[:error] = "Login Failed! Please Retry."
+      redirect_to new_sessions_path
     end
   end
 

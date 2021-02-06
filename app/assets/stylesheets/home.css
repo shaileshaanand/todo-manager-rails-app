@@ -16,3 +16,8 @@
   display: flex;
   justify-content: space-between;
 }
+.FlashError {
+  color: darkred;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
